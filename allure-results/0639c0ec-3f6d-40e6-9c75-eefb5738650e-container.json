@@ -1,0 +1,1 @@
+{"uuid":"0639c0ec-3f6d-40e6-9c75-eefb5738650e","name":"base.BaseAnnotation.setup","children":["3b2d9bf5-e9a6-4a96-96c0-4d30c4e94250"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1749464148423,"stop":1749464152373}],"afters":[],"start":1749464148422,"stop":1749464152374}
