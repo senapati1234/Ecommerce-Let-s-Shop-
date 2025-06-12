@@ -1,6 +1,7 @@
 package pages;
 
 import base.ActionHelper;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -30,20 +31,29 @@ public  class HomePage extends ActionHelper {
     @FindBy(xpath="//h1[text()='My Cart']")
     WebElement My_Cart_Text;
 
-    public String addItemToCart(){
-        for(WebElement product:products){
-            System.out.println(product.getText());
+    public String addItemToCart() {
+        String productNameToAdd = ConfigReader.getProperty("productToAddCart").trim();
+        System.out.println("Looking for product: " + productNameToAdd);
+
+        for (WebElement product : products) {
             String productName = product.getText().trim();
-            String productNameData = ConfigReader.getProperty("productToAddCart");
-            if(productName.equalsIgnoreCase(productNameData)){
-                clickElement(produc_AddToCart_Button,"Add to cart button");
+            if (productName.equalsIgnoreCase(productNameToAdd)) {
+                // Build dynamic XPath for matching product
+                WebElement dynamicAddToCartButton = driver.findElement(By.xpath(
+                        "//div[contains(@class,'col-lg-4')]//b[text()='" + productName + "']//ancestor::div[3]//i[@class='fa fa-shopping-cart']"
+                ));
+                dynamicAddToCartButton.click();
                 waitForVisibility(successmessage);
+                System.out.println(productName);
                 return productName;
+
             }
         }
-        return null;
+
+        throw new RuntimeException("Product not found: " + productNameToAdd);
     }
-    public void click_Cart(){
+    public void click_Cart() throws InterruptedException {
+        Thread.sleep(5000);
        clickElement(Home_Cart_Button,"Click on Cart button");
        waitForVisibility(My_Cart_Text);
     }
