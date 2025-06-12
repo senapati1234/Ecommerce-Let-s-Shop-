@@ -192,3 +192,66 @@
 2025-06-12 10:40:38 INFO  BaseAnnotation:24 - Initializing WebDriver for browser: edge
 2025-06-12 10:40:38 INFO  BaseAnnotation:28 - Navigating to URL: https://rahulshettyacademy.com/client/
 2025-06-12 10:40:41 INFO  BaseAnnotation:38 - Closing browser
+2025-06-12 12:06:33 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-12 12:06:33 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-12 12:06:34 INFO  BaseAnnotation:40 - Closing browser
+2025-06-12 12:09:20 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-12 12:09:20 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-12 12:09:21 INFO  BaseAnnotation:40 - Closing browser
+2025-06-12 12:09:52 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-12 12:09:52 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-12 12:09:53 INFO  BaseAnnotation:40 - Closing browser
+2025-06-12 12:12:53 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-12 12:12:53 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-12 12:13:09 INFO  BaseAnnotation:41 - Closing browser
+2025-06-12 12:13:29 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-12 12:13:29 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-12 12:13:32 INFO  BaseAnnotation:41 - Closing browser
+2025-06-12 12:14:39 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-12 12:14:39 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-12 12:14:43 INFO  BaseAnnotation:41 - Closing browser
+2025-06-12 12:16:30 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-12 12:16:30 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-12 12:16:43 INFO  BaseAnnotation:41 - Closing browser
+2025-06-12 12:17:54 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-12 12:17:54 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-12 12:18:07 INFO  BaseAnnotation:41 - Closing browser
+2025-06-12 12:22:59 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-12 12:22:59 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-12 12:23:12 INFO  BaseAnnotation:41 - Closing browser
+2025-06-12 12:30:09 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-12 12:30:09 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-12 12:30:32 INFO  BaseAnnotation:41 - Closing browser
+2025-06-12 12:38:48 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-12 12:38:48 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-12 12:39:02 INFO  BaseAnnotation:41 - Closing browser
+2025-06-12 12:46:40 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-12 12:46:40 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-12 12:46:53 INFO  BaseAnnotation:41 - Closing browser
+2025-06-12 12:57:15 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-12 12:57:15 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-12 12:57:29 INFO  BaseAnnotation:41 - Closing browser
+2025-06-12 13:03:24 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-12 13:03:24 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-12 13:03:26 INFO  BaseAnnotation:41 - Closing browser
+2025-06-12 13:08:28 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-12 13:08:28 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-12 13:08:32 INFO  BaseAnnotation:41 - Closing browser
+2025-06-12 13:11:39 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-12 13:11:39 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-12 13:13:41 INFO  BaseAnnotation:41 - Closing browser
+2025-06-12 13:14:56 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-12 13:14:56 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-12 13:15:03 INFO  BaseAnnotation:41 - Closing browser
+2025-06-12 13:15:32 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-12 13:15:32 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-12 13:15:35 INFO  BaseAnnotation:41 - Closing browser
+2025-06-12 13:17:06 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-12 13:17:06 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-12 13:17:10 INFO  BaseAnnotation:41 - Closing browser
+2025-06-12 13:18:39 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-12 13:18:39 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-12 13:18:45 INFO  BaseAnnotation:41 - Closing browser
+2025-06-12 13:20:31 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-12 13:20:31 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-12 13:20:51 INFO  BaseAnnotation:41 - Closing browser

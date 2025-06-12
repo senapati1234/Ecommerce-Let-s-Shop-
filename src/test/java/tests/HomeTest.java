@@ -8,7 +8,7 @@ import utils.ConfigReader;
 
 public class HomeTest extends BaseAnnotation {
     @Test
-    public void add_Product_Cart(){
+    public void add_Product_Cart() throws InterruptedException {
 
         // Read username and password from config
         String user = ConfigReader.getProperty("username");
@@ -16,5 +16,6 @@ public class HomeTest extends BaseAnnotation {
         loginPage.login(user, pass);
         homePage.addItemToCart();
         homePage.click_Cart();
+
     }
 }
