@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c36becd-088f-4e73-9ab9-98c985465a22" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="0c36becd-088f-4e73-9ab9-98c985465a22" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +48,7 @@
     "TestNG.CartTest.executor": "Run",
     "TestNG.HomeTest.executor": "Run",
     "TestNG.LoginTest.executor": "Run",
-    "git-widget-placeholder": "Testing",
+    "git-widget-placeholder": "testing",
     "last_directory_selection": "C:/Users/ADMIN/Downloads/selenium-java-framework (1)/selenium-java-framework/target/generated-test-sources/test-annotations",
     "last_opened_file_path": "C:/Users/ADMIN/Downloads/Let's Shop"
   }
