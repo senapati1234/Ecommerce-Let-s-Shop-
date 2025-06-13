@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bcb31f9d-9e13-4882-8764-f36bef35716c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/0cf64ce7-9825-48af-9562-cb7bb1a55dbb-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/16f719ff-f446-4ae2-aa5d-45dcd8cbd603-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/1dfe8ec8-7521-462b-be59-08667e816118-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/47f24c92-0a5b-4858-aa90-0194d20f8ff7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/55e1e63b-9990-4be3-adb9-f6951495e7fe-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/5e8a11a5-5943-45a6-946a-6dff4e40a88e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/7ab45761-a401-46de-b455-58f9e90b140f-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/8791e07a-76be-4777-b777-84684a5c0fe2-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/89dff93d-e317-4f47-b437-58c2fd1728c4-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/9b85c975-8948-4187-ae5b-62b0cb58fc86-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/9ce48de9-0412-4a86-af93-7c7bccc5b907-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b50f0a16-43aa-45c1-b1f4-18c04b372089-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b7bb72fb-9c89-4a96-bdcb-f795997d841c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/c1a6e655-570d-41b6-aea6-abafb28ca5c8-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/cb7d8fdf-4b8a-4297-8767-e9ea99f2e730-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/d5a8766c-02f6-44f9-99a6-5c27984b2637-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/d970f608-1c23-4a54-aa4c-a045de0b8204-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f2386768-05a8-45e0-9ad4-445451abad5d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/test-log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eommerce_Application/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eommerce_Application/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eommerce_Application/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eommerce_Application/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eommerce_Application/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eommerce_Application/src/main/java/base/TestBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eommerce_Application/src/main/java/config/ConfigReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eommerce_Application/src/main/java/pages/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eommerce_Application/src/main/java/utils/WaitUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eommerce_Application/src/main/java/utils/WebDriverFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eommerce_Application/src/test/java/runners/TestRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eommerce_Application/src/test/java/tests/LoginTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eommerce_Application/src/test/resources/allure.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eommerce_Application/src/test/resources/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eommerce_Application/src/test/resources/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eommerce_Application/src/test/resources/testng.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "TestNG.CartTest.executor": "Run",
+    "TestNG.HomeTest.executor": "Run",
+    "git-widget-placeholder": "Merging main"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+</project>
