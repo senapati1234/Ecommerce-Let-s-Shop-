@@ -1,0 +1,6 @@
+2025-06-13 11:14:28 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-13 11:14:28 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-13 11:14:47 INFO  BaseAnnotation:41 - Closing browser
+2025-06-13 11:17:09 INFO  BaseAnnotation:26 - Initializing WebDriver for browser: edge
+2025-06-13 11:17:09 INFO  BaseAnnotation:30 - Navigating to URL: https://rahulshettyacademy.com/client/
+2025-06-13 11:17:19 INFO  BaseAnnotation:41 - Closing browser
