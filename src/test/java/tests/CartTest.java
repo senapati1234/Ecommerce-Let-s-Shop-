@@ -1,10 +1,7 @@
 package tests;
 
 import base.BaseAnnotation;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import pages.CartPage;
 import utils.ConfigReader;
 
 public class CartTest extends BaseAnnotation {

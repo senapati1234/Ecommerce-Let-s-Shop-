@@ -2,8 +2,6 @@ package tests;
 
 import base.BaseAnnotation;
 import org.testng.annotations.Test;
-import pages.HomePage;
-import pages.LoginPage;
 import utils.ConfigReader;
 
 public class HomeTest extends BaseAnnotation {

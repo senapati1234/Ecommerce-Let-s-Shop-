@@ -9,7 +9,6 @@ import org.openqa.selenium.support.PageFactory;
 import utils.ConfigReader;
 
 import java.util.List;
-import java.util.Objects;
 
 public  class HomePage extends ActionHelper {
 

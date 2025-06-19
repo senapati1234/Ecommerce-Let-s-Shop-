@@ -3,12 +3,17 @@ package base;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
 import java.util.List;
 
-public class ActionHelper extends BaseAnnotation{
+public class ActionHelper extends BaseAnnotation {
+    private static final Logger log = LoggerFactory.getLogger(ActionHelper.class);
     WebDriver driver;
 
     public ActionHelper(WebDriver driver) {
@@ -17,28 +22,30 @@ public class ActionHelper extends BaseAnnotation{
 
     // Wait until element is visible
     public WebElement waitForVisibility(WebElement element) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         return wait.until(ExpectedConditions.visibilityOf(element));
     }
 
     // Click using WebDriver wait
     public void clickElement(WebElement element, String elementName) {
-        waitForVisibility(element).click();
-        System.out.println("Clicked on:" +elementName);
+        waitForVisibility(element);
+        log.info(elementName + "is visible");
+        element.click();
+        log.info("successfully clicked on " + elementName);
     }
 
     // Click using JS
-    public void clickByJS(WebElement element,String elementName) {
+    public void clickByJS(WebElement element, String elementName) {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
-        System.out.println("Manual Clicked on:" +elementName);
+        System.out.println("Manual Clicked on:" + elementName);
     }
 
     // Send keys with wait
-    public void enterText(WebElement element, String text,String textBoxName) {
+    public void enterText(WebElement element, String text, String textBoxName) {
         WebElement el = waitForVisibility(element);
         el.clear();
         el.sendKeys(text);
-        System.out.println(textBoxName+ "field fill successfully");
+        System.out.println(textBoxName + "field fill successfully");
     }
 
     // Get text from element
@@ -48,37 +55,37 @@ public class ActionHelper extends BaseAnnotation{
 
     // Hover on element
     public void hoverOnElement(WebElement element) {
-        Actions actions =new Actions(driver);
+        Actions actions = new Actions(driver);
         actions.moveToElement(waitForVisibility(element)).perform();
     }
 
     // Scroll to element
-    public void scrollToElement(WebElement element,String elementName) {
+    public void scrollToElement(WebElement element, String elementName) {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-        System.out.println("Scrolling successfully" +elementName);
+        System.out.println("Scrolling successfully" + elementName);
     }
 
     // Select dropdown by visible text
-    public void selectDropdownByText(WebElement dropdown, String text,String textName) {
+    public void selectDropdownByText(WebElement dropdown, String text, String textName) {
         new Select(waitForVisibility(dropdown)).selectByVisibleText(text);
-        System.out.println(textName+ "selected successfully from dropdown");
+        System.out.println(textName + "selected successfully from dropdown");
     }
 
     // Select dropdown by value
     public void selectDropdownByValue(WebElement dropdown, String value, String textName) {
         new Select(waitForVisibility(dropdown)).selectByValue(value);
-        System.out.println(textName+ "selected successfully from dropdown");
+        System.out.println(textName + "selected successfully from dropdown");
     }
 
     // Select dropdown by index
-    public void selectDropdownByIndex(WebElement dropdown, int index,String textName) {
+    public void selectDropdownByIndex(WebElement dropdown, int index, String textName) {
         new Select(waitForVisibility(dropdown)).selectByIndex(index);
-        System.out.println(textName+ "selected successfully from dropdown");
+        System.out.println(textName + "selected successfully from dropdown");
     }
 
     // Drag and drop
     public void dragAndDrop(WebElement source, WebElement target) {
-        Actions actions =new Actions(driver);
+        Actions actions = new Actions(driver);
         actions.dragAndDrop(source, target).build().perform();
         System.out.println("Successfully drag and drop completed");
     }
@@ -99,11 +106,11 @@ public class ActionHelper extends BaseAnnotation{
     }
 
     // Click with retry (for flaky elements)
-    public void clickWithRetry(WebElement element, int attempts,String elementName) {
+    public void clickWithRetry(WebElement element, int attempts, String elementName) {
         int count = 0;
         while (count < attempts) {
             try {
-                clickElement(element,elementName);
+                clickElement(element, elementName);
                 break;
             } catch (Exception e) {
                 count++;
@@ -135,6 +142,7 @@ public class ActionHelper extends BaseAnnotation{
     // Get list of visible elements
     public List<WebElement> getVisibleElements(List<WebElement> elements) {
         return elements.stream().filter(WebElement::isDisplayed).toList();
+
     }
 }
 
