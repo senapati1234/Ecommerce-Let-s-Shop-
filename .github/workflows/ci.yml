@@ -1,0 +1,32 @@
+name: Run Automation Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+
+      - name: Build with Maven
+        run: mvn clean install
+
+      - name: Run Test Cases
+        run: mvn test
+
+      - name: Upload Test Reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-report
+          path: target/surefire-reports/  # Update if you use different location
