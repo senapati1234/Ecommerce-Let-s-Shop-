@@ -15,16 +15,19 @@ public class CartPage extends ActionHelper{
         this.driver=driver;
         PageFactory.initElements(driver, this);
     }
-    HomePage home=new HomePage(driver);
     @FindBy(css = ".cartSection h3")
     WebElement cart_Product_Name;
+    @FindBy(xpath = "//button[text()='Checkout']")
+    WebElement checkout_Button;
 
     public void productname(String expectedProduct) throws InterruptedException {
         Thread.sleep(10000);
         String actual = cart_Product_Name.getText().trim();
         System.out.println(actual);
         Assert.assertEquals(actual, expectedProduct);
-
+    }
+    public void clickCheckOutButton(){
+        clickElement(checkout_Button,"Checkout Button");
     }
 
 }

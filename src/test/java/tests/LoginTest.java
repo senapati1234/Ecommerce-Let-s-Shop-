@@ -2,7 +2,6 @@ package tests;
 
 import base.BaseAnnotation;
 import org.testng.annotations.Test;
-
 import utils.ConfigReader;
 
 public class LoginTest extends BaseAnnotation {
