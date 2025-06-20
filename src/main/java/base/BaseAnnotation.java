@@ -27,7 +27,7 @@ public class BaseAnnotation extends DriverManager implements ITestListener {
     @BeforeMethod
     public void setup() {
         //String browser = ConfigReader.getProperty("browser");
-        String  browser="edge";
+        String  browser="chrome";
         driver = DriverManager.initializeDriver(browser);
         logger.info("Initializing WebDriver for browser: " + browser);
         driver = initializeDriver(browser);
