@@ -28,14 +28,19 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven
 
+      - name: Install Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+
       - name: Build with Maven
         run: mvn clean install
 
-      - name: Run TestNG Tests
-        run: mvn test
+      - name: Run TestNG Tests with Headless Chrome
+        run: mvn test -Dbrowser=chrome
 
       - name: Upload TestNG Reports
-        uses: actions/upload-artifact@v4  # <-- Updated version here
+        uses: actions/upload-artifact@v4
         with:
           name: testng-reports
           path: target/surefire-reports/
