@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import utils.ConfigReader;
 
 public class CartTest extends BaseAnnotation {
-    @Test
+    @Test(description = "Added Product on cart is display properly")
     public void productOnCart() throws InterruptedException {
         String user = ConfigReader.getProperty("username");
         String pass = ConfigReader.getProperty("password");
@@ -15,6 +15,7 @@ public class CartTest extends BaseAnnotation {
         homePage.addItemToCart();
         homePage.click_Cart();
         cartPage.productname(addedProductName);
+        logOut.SignOut();
 
     }
 

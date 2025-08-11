@@ -7,7 +7,7 @@ import utils.ConfigReader;
 
 
 public class CheckOutTest extends BaseAnnotation {
-    @Test
+    @Test(description = "Verify Order is able to checkout properly")
     public void placeOrder() throws InterruptedException {
         String user = ConfigReader.getProperty("username");
         String pass = ConfigReader.getProperty("password");
@@ -29,6 +29,7 @@ public class CheckOutTest extends BaseAnnotation {
         checkOutPage.applyCouponButton();
         checkOutPage.shippingInformation(shipEmail,countryIntialName);
         checkOutPage.selectValueFromCountryDropDown(countryName);
+        logOut.SignOut();
 
     }
 

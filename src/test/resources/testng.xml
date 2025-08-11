@@ -1,14 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="All Tests">
-
-    <!-- Register your custom TestListener class here -->
+<suite name="MySuite">
     <listeners>
-        <listener class-name="base.TestListener"/>
+        <listener class-name="base.ExcelReportListener"/>
     </listeners>
-
-    <test name="CheckOut Test">
+    <test name="MyTest">
         <classes>
-            <class name="tests.CheckOutTest"/>
+            <class name="tests.LoginTest"/>
+            <class name="tests.HomeTest"/>
+            <!-- Add more test classes here -->
         </classes>
     </test>
 </suite>

@@ -5,13 +5,9 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.*;
 
-import pages.CartPage;
-import pages.CheckOutPage;
-import pages.HomePage;
-import pages.LoginPage;
+import pages.*;
 import utils.ConfigReader;
 import utils.ScreenshotUtil;
 import utils.VideoRecorderUtil;
@@ -22,32 +18,36 @@ public class BaseAnnotation extends DriverManager implements ITestListener {
     protected HomePage homePage;
     protected CartPage cartPage;
     protected CheckOutPage checkOutPage;
+    protected LogOut logOut;
     private static final Logger logger = LogManager.getLogger(BaseAnnotation.class);
 
-    @BeforeMethod
-    public void setup() {
-        //String browser = ConfigReader.getProperty("browser");
-        String  browser="chrome";
+    private void initializeTestSetup() {
+        String browser = "chrome"; // or ConfigReader.getProperty("browser")
         driver = DriverManager.initializeDriver(browser);
         logger.info("Initializing WebDriver for browser: " + browser);
-        driver = initializeDriver(browser);
 
         String url = ConfigReader.getProperty("app.url");
         logger.info("Navigating to URL: " + url);
         driver.get(url);
+
         loginPage = new LoginPage(driver);
         homePage = new HomePage(driver);
-        cartPage=new CartPage(driver);
-        checkOutPage=new CheckOutPage(driver);
-
-
+        cartPage = new CartPage(driver);
+        checkOutPage = new CheckOutPage(driver);
+        logOut = new LogOut(driver);
     }
 
-    @AfterMethod
+    @BeforeMethod
+    public void beforeTestSetup() {
+        initializeTestSetup();
+    }
+
+
+    @AfterTest
     public void tearDown() {
         if (driver != null) {
             logger.info("Closing browser");
-            driver.quit();
+            driver.close();
             driver = null;
         }
     }

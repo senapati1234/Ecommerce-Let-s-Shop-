@@ -1,0 +1,4 @@
+Test Case Name,Status,Error Logs
+Verify Login Functionality With valid credentials,PASS,
+Verify Login Functionality With valid credentials,PASS,
+Verify to add the product on Cart from Home Page,PASS,

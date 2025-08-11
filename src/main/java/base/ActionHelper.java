@@ -14,7 +14,7 @@ import java.util.List;
 
 public class ActionHelper extends BaseAnnotation {
     private static final Logger log = LoggerFactory.getLogger(ActionHelper.class);
-    WebDriver driver;
+    protected WebDriver driver;
 
     public ActionHelper(WebDriver driver) {
         this.driver = driver;
