@@ -2,13 +2,13 @@ package tests;
 
 import base.BaseAnnotation;
 import org.testng.annotations.Test;
-import utils.ConfigReader;
+import utils.JsonDataReader;
 
 public class CartTest extends BaseAnnotation {
     @Test(description = "Added Product on cart is display properly")
     public void productOnCart() throws InterruptedException {
-        String user = ConfigReader.getProperty("username");
-        String pass = ConfigReader.getProperty("password");
+        String user = JsonDataReader.getTestData().username;
+        String pass = JsonDataReader.getTestData().password;
         loginPage.login(user, pass);
         String addedProductName = homePage.addItemToCart();
         System.out.println("Product added to cart: " + addedProductName);

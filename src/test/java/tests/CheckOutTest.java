@@ -3,21 +3,21 @@ package tests;
 
 import base.BaseAnnotation;
 import org.testng.annotations.Test;
-import utils.ConfigReader;
+import utils.JsonDataReader;
 
 
 public class CheckOutTest extends BaseAnnotation {
     @Test(description = "Verify Order is able to checkout properly")
     public void placeOrder() throws InterruptedException {
-        String user = ConfigReader.getProperty("username");
-        String pass = ConfigReader.getProperty("password");
-        String card=ConfigReader.getProperty("creditCardNumber");
-        String cvvNumber=ConfigReader.getProperty("cvvCode");
-        String nameCard=ConfigReader.getProperty("nameOnCard");
-        String coupanText=ConfigReader.getProperty("couponData");
-        String shipEmail=ConfigReader.getProperty("shipEmailTestData");
-        String countryIntialName=ConfigReader.getProperty("countryInitialNameTestData");
-        String countryName=ConfigReader.getProperty("countryName");
+        String user = JsonDataReader.getTestData().username;
+        String pass = JsonDataReader.getTestData().password;
+        String card=JsonDataReader.getTestData().creditCardNumber;
+        String cvvNumber=JsonDataReader.getTestData().cvvCode;
+        String nameCard=JsonDataReader.getTestData().nameOnCard;
+        String coupanText=JsonDataReader.getTestData().couponData;
+        String shipEmail=JsonDataReader.getTestData().shipEmailTestData;
+        String countryIntialName=JsonDataReader.getTestData().countryInitialNameTestData;
+        String countryName=JsonDataReader.getTestData().countryName;
         loginPage.login(user, pass);
         String addedProductName = homePage.addItemToCart();
         homePage.addItemToCart();

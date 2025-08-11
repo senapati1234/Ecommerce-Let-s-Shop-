@@ -1,4 +1,5 @@
 Test Case Name,Status,Error Logs
-Verify Login Functionality With valid credentials,PASS,
-Verify Login Functionality With valid credentials,PASS,
+Verify Login Functionality with valid credentials,PASS,
 Verify to add the product on Cart from Home Page,PASS,
+Added Product on cart is display properly,PASS,
+Verify Order is able to checkout properly,PASS,

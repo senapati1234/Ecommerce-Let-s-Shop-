@@ -1,0 +1,16 @@
+
+
+{
+"browser":"chrome",
+"appUrl": "https://rahulshettyacademy.com/client/",
+"username": "pradyumanasenapati1997@gmail.com",
+"password": "@Pradyumna123",
+"productToAddCart": "IPHONE 13 PRO",
+"creditCardNumber": "4542 9931 9292 2293",
+"cvvCode": "123",
+"nameOnCard": "Pradyumna",
+"couponData": "rahulshettyacademy",
+"shipEmailTestData": "pradyumanasenapati1997@gmail.com",
+"countryInitialNameTestData": "Ind",
+"countryName": "India"
+}

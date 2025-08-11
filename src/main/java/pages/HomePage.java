@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import utils.ConfigReader;
+import utils.JsonDataReader;
 
 import java.util.List;
 
@@ -31,7 +31,7 @@ public  class HomePage extends ActionHelper {
     WebElement My_Cart_Text;
 
     public String addItemToCart() {
-        String productNameToAdd = ConfigReader.getProperty("productToAddCart").trim();
+        String productNameToAdd = JsonDataReader.getTestData().productToAddCart.trim();
         System.out.println("Looking for product: " + productNameToAdd);
 
         for (WebElement product : products) {

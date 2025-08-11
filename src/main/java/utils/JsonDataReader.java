@@ -1,3 +1,4 @@
+/*
 package utils;
 
 import java.io.FileInputStream;
@@ -18,5 +19,24 @@ public class ConfigReader {
             e.printStackTrace();
         }
         return prop.getProperty(key);
+    }
+}*/
+package utils;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import java.io.File;
+import java.io.IOException;
+
+public class JsonDataReader {
+
+    public static TestData getTestData() {
+        ObjectMapper mapper = new ObjectMapper();
+        TestData data = null;
+        try {
+            data = mapper.readValue(new File("src/test/resources/testdata.json"), TestData.class);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return data;
     }
 }
